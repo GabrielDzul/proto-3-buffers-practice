@@ -1,0 +1,9 @@
+syntax = "proto3";
+/*
+    Example of a package
+*/
+package my.package;
+
+message MessageSix {
+
+}

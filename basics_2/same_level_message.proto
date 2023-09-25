@@ -1,5 +1,8 @@
 syntax = "proto3";
 
+/*
+    Defining multiple messages in a same file is possible
+*/
 message MessageOne {
     
 }
@@ -12,4 +15,5 @@ enum EnumOne {
 message MessageTwo {
     MessageOne one = 1;
     EnumOne tow = 2;
+    int32 test = 3;
 }

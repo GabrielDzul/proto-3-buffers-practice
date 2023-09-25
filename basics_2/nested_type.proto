@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+
+/*
+    By defining nested messages, we can use them as properties in the parent container
+*/
+message MessageThree {
+    message MessageFour {
+        
+    }
+
+    enum EnumTwo {
+        ENUM_TWO_UNSPECIFIED = 0;
+        //...
+    }
+
+    MessageFour four = 1;
+    EnumTwo two = 2;
+}
