@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package example.complex;
+
+option go_package = "github.com/gabriel-dzul/protocol-3-buffers-course/go/proto";
+
+message DummyExample {
+    int32 id = 1;
+    string name = 2;
+}
+
+message Complex {
+    DummyExample one_dumy = 1;
+    repeated DummyExample multiple_dumies = 2;
+}

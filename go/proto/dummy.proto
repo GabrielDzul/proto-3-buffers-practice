@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package example.dummy;
+
+option go_package = "github.com/gabriel-dzul/protocol-3-buffers-course/go/proto";
+
+message Dummy {
+    uint32 id = 1;
+}
